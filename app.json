@@ -1,15 +1,15 @@
 {
-  "name": "Farmer Smart Site",
-  "description": "A web application for AI-driven rice farming management",
+  "name": "HIV Smart Care Site",
+  "description": "A web application for AI-driven HIV care management",
   "keywords": [
     "react",
     "vite",
-    "agriculture",
+    "healthcare",
     "ai",
-    "rice-farming"
+    "hiv-care"
   ],
-  "website": "https://farmer-smart-app.herokuapp.com/",
-  "repository": "https://github.com/yourusername/farmer-smart-site",
+  "website": "https://hiv-smart-care.herokuapp.com/",
+  "repository": "https://github.com/yourusername/hiv-smart-care-site",
   "success_url": "/",
   "buildpacks": [
     {

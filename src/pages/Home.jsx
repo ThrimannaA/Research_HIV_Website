@@ -2,9 +2,10 @@ import React from "react";
 import Hero from "../components/Hero";
 import "./Home.css";
 import ProjectScopePage from "./ProjectScopePage";
-import MethodologyPage from "./MethodologyPage";
+import PresentationsPage from "./PresentationsPage";
 import TeamPage from "./TeamPage";
-import SystemArchitecture from "../components/SystemArchitecture";
+import SystemArchitecture from "../components/MilestonesPage";
+import DocumentsPage from "./DocumentsPage";
 
 function Home() {
   return (
@@ -12,10 +13,12 @@ function Home() {
       <Hero />
       <ProjectScopePage />
       <SystemArchitecture />
-      <MethodologyPage />
+      <DocumentsPage />
+      <PresentationsPage />
       <TeamPage />
     </div>
   );
 }
 
 export default Home;
+

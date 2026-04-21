@@ -1,7 +1,7 @@
 import React from 'react';
 import './TeamPage.css';
 import './Team.css';
-import anujiImage from '../assets/images/anuji.jpg';
+import anujiImage from '../assets/images/anuji.png';
 import deesaraImage from '../assets/images/deesara.png';
 import viharaImage from '../assets/images/vihara.png';
 import msThamaliImage from '../assets/images/MsThamali.png';

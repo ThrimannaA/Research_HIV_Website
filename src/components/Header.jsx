@@ -55,11 +55,11 @@ const Header = () => {
         <nav className={`nav-menu ${menuOpen ? 'active' : ''}`}>
           <ul>
             <li><a href="#home" onClick={() => setMenuOpen(false)}>Home</a></li>
-            <li><a href="#project-scope" onClick={() => setMenuOpen(false)}>Project Scope</a></li>
-            <li><a href="#architecture" onClick={() => setMenuOpen(false)}>System Architecture</a></li>
-            <li><a href="#methodology" onClick={() => setMenuOpen(false)}>Methodology</a></li>
-            <li><a href="#team" onClick={() => setMenuOpen(false)}>Team</a></li>
-            <li><a href="https://drive.google.com/drive/folders/18mfPfm5OQrih3oTA6GXaSCcSIBZuTQ7H?usp=drive_link" onClick={() => setMenuOpen(false)}>Documents</a></li>
+            <li><a href="#domain" onClick={() => setMenuOpen(false)}>Domain</a></li>
+            <li><a href="#milestones" onClick={() => setMenuOpen(false)}>Milestones</a></li>
+            <li><a href="#documents" onClick={() => setMenuOpen(false)}>Documents</a></li>            
+            <li><a href="#presentations" onClick={() => setMenuOpen(false)}>Presentations</a></li>
+            <li><a href="#team" onClick={() => setMenuOpen(false)}>About Us</a></li>
           </ul>
         </nav>
       </div>
@@ -68,3 +68,4 @@ const Header = () => {
 };
 
 export default Header; 
+

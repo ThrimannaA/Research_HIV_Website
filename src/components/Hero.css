@@ -3,7 +3,7 @@
   height: 100vh;
   min-height: 600px;
   width: 100%;
-  background: url('../assets/images/rice-field.jpg') no-repeat center center;
+  background: url('../assets/images/HIV.jfif') no-repeat center center;
   background-size: cover;
   color: var(--white);
   display: flex;
@@ -121,4 +121,5 @@
   .hero-content h2 {
     font-size: 1.2rem;
   }
-} 
+}  
+

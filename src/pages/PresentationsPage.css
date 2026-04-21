@@ -1,12 +1,11 @@
-.methodology-page {
+.presentations-page {
   width: 100%;
   min-height: auto;
   display: flex;
   flex-direction: column;
-  padding: 0;
 }
 
-.methodology-page .methodology {
+.presentations-page .presentations-section {
   padding-top: 4rem;
   padding-bottom: 4rem;
-} 
+}

@@ -56,41 +56,14 @@
   transition: transform 0.3s ease;
 }
 
-.sahiru-image {
+
+.anuji-image {
   object-fit: contain; 
   padding: 10px;
-  background-color: #e8eaf6; 
+  background-color: white; 
 }
 
-.isuru-image {
-  object-fit: contain; 
-  padding: 10px;
-  background-color: #a4c7f4; 
-}
 
-.dr-kapila-image {
-  object-fit: contain; 
-  padding: 10px;
-  background-color: #e3f2fd; 
-}
-
-.mr-vishan-image {
-  object-fit: contain; 
-  padding: 10px;
-  background-color: #e8f5e9; 
-}
-
-.gayan-image {
-  object-fit: contain; 
-  padding: 10px;
-  background-color: #fff3e0; 
-}
-
-.mitun-image {
-  object-fit: contain; 
-  padding: 10px;
-  background-color: #f3e5f5; 
-}
 
 .team-card:hover .real-image {
   transform: scale(1.05);

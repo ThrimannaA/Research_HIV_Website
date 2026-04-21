@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="container hero-container">
         <div className="hero-content">
           <h1>HIV Smart Care</h1>
-          <h2>IoT and AI-Based HIV Care and Decision Support</h2>
+          <h2>IoT and AI-Based HIV Care and Decision Support System</h2>
           <p>
             Revolutionizing HIV care through intelligent IoT monitoring, 
             AI-based behavioural risk assessment, and machine learning-driven 
@@ -19,8 +19,8 @@ const Hero = () => {
             to improve healthcare outcomes.
           </p>
           <div className="hero-buttons">
-            <a href="#project-scope" className="btn">Learn More</a>
-            <a href="#methodology" className="btn btn-outline">Our Approach</a>
+            <a href="#domain" className="btn">Learn More</a>
+            <a href="#presentations" className="btn btn-outline">View Presentations</a>
           </div>
         </div>
       </div>
