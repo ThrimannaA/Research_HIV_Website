@@ -1,0 +1,19 @@
+{
+  "name": "Farmer Smart Site",
+  "description": "A web application for AI-driven rice farming management",
+  "keywords": [
+    "react",
+    "vite",
+    "agriculture",
+    "ai",
+    "rice-farming"
+  ],
+  "website": "https://farmer-smart-app.herokuapp.com/",
+  "repository": "https://github.com/yourusername/farmer-smart-site",
+  "success_url": "/",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+} 

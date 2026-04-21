@@ -1,0 +1,136 @@
+.project-scope {
+  background-color: var(--light-bg);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  width: 100%;
+}
+
+.scope-container {
+  margin-top: 3rem;
+  box-shadow: var(--shadow);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--white);
+  width: 100%;
+}
+
+.scope-tabs {
+  display: flex;
+  background-color: var(--secondary-color);
+  overflow-x: auto;
+  scrollbar-width: none;
+  width: 100%;
+}
+
+.scope-tabs::-webkit-scrollbar {
+  display: none; 
+}
+
+.scope-tab {
+  padding: 1rem 1.5rem;
+  color: var(--white);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: var(--transition);
+  border-bottom: 3px solid transparent;
+}
+
+.scope-tab.active {
+  border-bottom-color: var(--accent-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.scope-tab:hover:not(.active) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.scope-content {
+  padding: 2rem;
+  width: 100%;
+}
+
+.scope-panel {
+  display: none;
+  width: 100%;
+}
+
+.scope-panel.active {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.scope-panel h3 {
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.scope-panel h4 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.scope-panel p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.objective-card {
+  display: flex;
+  margin-bottom: 1.5rem;
+  background-color: var(--light-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: var(--transition);
+  width: 100%;
+}
+
+.objective-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.objective-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.objective-content {
+  padding: 1rem;
+  flex: 1;
+}
+
+.objective-content h4 {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .scope-tab {
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .scope-content {
+    padding: 1.5rem;
+  }
+  
+  .objective-icon {
+    width: 50px;
+    font-size: 1.2rem;
+  }
+} 

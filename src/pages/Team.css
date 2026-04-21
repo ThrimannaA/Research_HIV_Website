@@ -1,0 +1,225 @@
+.team {
+  background-color: var(--light-bg);
+  width: 100%;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.team-card {
+  background-color: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  width: 100%;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.member-image {
+  height: 280px;
+  background-color: var(--primary-color);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-placeholder span {
+  font-size: 3rem;
+  color: var(--white);
+  font-weight: bold;
+}
+
+/* Style for real team member images */
+.real-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.sahiru-image {
+  object-fit: contain; 
+  padding: 10px;
+  background-color: #e8eaf6; 
+}
+
+.isuru-image {
+  object-fit: contain; 
+  padding: 10px;
+  background-color: #a4c7f4; 
+}
+
+.dr-kapila-image {
+  object-fit: contain; 
+  padding: 10px;
+  background-color: #e3f2fd; 
+}
+
+.mr-vishan-image {
+  object-fit: contain; 
+  padding: 10px;
+  background-color: #e8f5e9; 
+}
+
+.gayan-image {
+  object-fit: contain; 
+  padding: 10px;
+  background-color: #fff3e0; 
+}
+
+.mitun-image {
+  object-fit: contain; 
+  padding: 10px;
+  background-color: #f3e5f5; 
+}
+
+.team-card:hover .real-image {
+  transform: scale(1.05);
+}
+
+.team-card:hover .isuru-image {
+  transform: scale(1);
+}
+
+.member-info {
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.member-info h3 {
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.member-info h4 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.member-info p {
+  color: var(--text-color);
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--light-bg);
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.social-links a:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  transform: translateY(-3px);
+}
+
+/* Achievements */
+.achievements {
+  margin-top: 5rem;
+  width: 100%;
+}
+
+.achievements h3 {
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.achievement-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+.achievement-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  width: 100%;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-icon {
+  width: 60px;
+  height: 60px;
+  background-color: var(--light-bg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.achievement-icon i {
+  font-size: 1.8rem;
+  color: var(--accent-color);
+}
+
+.achievement-content {
+  flex: 1;
+}
+
+.achievement-content h4 {
+  color: var(--secondary-color);
+  margin-bottom: 0.3rem;
+}
+
+.achievement-content p {
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
+  .achievement-cards {
+    grid-template-columns: 1fr;
+  }
+} 

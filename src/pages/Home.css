@@ -1,0 +1,22 @@
+.home-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-page section {
+  scroll-margin-top: 80px;
+}
+
+.home-page > * + * {
+  margin-top: 0;
+}
+
+.home-page .section-title {
+  margin-bottom: 3rem;
+}
+
+html {
+  scroll-behavior: smooth;
+} 
