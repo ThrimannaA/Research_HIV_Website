@@ -19,8 +19,19 @@ const Hero = () => {
             to improve healthcare outcomes.
           </p>
           <div className="hero-buttons">
-            <a href="#domain" className="btn">Learn More</a>
-            <a href="#presentations" className="btn btn-outline">View Presentations</a>
+            <a href="#domain" className="btn" onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('domain')?.scrollIntoView({ behavior: 'smooth' });
+            }}>
+              Learn More
+            </a>
+
+            <a href="#presentations" className="btn btn-outline" onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('presentations')?.scrollIntoView({ behavior: 'smooth' });
+            }}>
+              View Presentations
+            </a>
           </div>
         </div>
       </div>
