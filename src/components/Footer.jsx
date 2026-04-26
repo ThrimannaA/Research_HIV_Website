@@ -43,7 +43,7 @@ const Footer = () => {
             <div className="contact-info">
               <h3>Contact Us</h3>
               <p>
-                Have questions about our IoT and AI-based HIV decision supportresearch or interested in collaboration? 
+                Have questions about our IoT and AI-based HIV decision support research or interested in collaboration? 
                 Feel free to reach out to us.
               </p>
               

@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #4CAF50;
-  --secondary-color: #2E7D32;
-  --accent-color: #FFC107;
+  --primary-color: #2A7F9E;      /* medical blue */
+  --secondary-color: #1F5F75;
+  --accent-color: #E53935;       /* HIV awareness red as highlight */
   --text-color: #333;
-  --light-bg: #f9f9f9;
+  --light-bg: #F4F9FB;
   --white: #ffffff;
   --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   --transition: all 0.3s ease;

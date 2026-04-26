@@ -19,8 +19,8 @@ const TeamPage = () => {
       imageClass: 'ms-thamali-image',
       social: {
         email: 'thamali.d@sliit.lk',
-        linkedin: '#',
-        scholar: '#'
+        linkedin: 'https://www.linkedin.com/in/gaya-thamali-dassanayake-7b85b787/',
+        scholar: 'https://scholar.google.com/citations?user=tv9uctwAAAAJ&hl=en'
       }
     },
     {
@@ -33,8 +33,8 @@ const TeamPage = () => {
       imageClass: 'deesara-image',
       social: {
         email: 'deesararupasinghe2001@gmail.com ',
-        linkedin: '#',
-        github: '#'
+        linkedin: 'https://www.linkedin.com/in/deesara-rupasinghe/',
+        github: 'https://github.com/DeesaraRupasinghe/'
       }
     },
     {
@@ -47,8 +47,8 @@ const TeamPage = () => {
       imageClass: 'anuji-image',
       social: {
         email: 'anuji.thrimanna@gmail.com',
-        linkedin: '#',
-        github: '#'
+        linkedin: 'https://www.linkedin.com/in/anuji-thrimanna-6389392a9/',
+        github: 'https://github.com/ThrimannaA'
       }
     },
     {
@@ -61,8 +61,8 @@ const TeamPage = () => {
       imageClass: 'vihara-image',
       social: {
         email: 'vihara.diwyanjalee@gmail.com ',
-        linkedin: '#',
-        github: '#'
+        linkedin: 'https://www.linkedin.com/in/vihara-diwyanjalee/',
+        github: 'https://github.com/Vihara-Diwyanjalee'
       }
     },
   ];

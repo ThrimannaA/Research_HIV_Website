@@ -1,167 +1,6 @@
-// import React, { useState } from 'react';
-// import './ProjectScopePage.css';
-// import './ProjectScope.css';
-
-// const ProjectScopePage = () => {
-//   const [activeTab, setActiveTab] = useState('literature');
-  
-//   const handleTabClick = (tab) => {
-//     setActiveTab(tab);
-//   };
-
-//   return (
-//     <div className="project-scope-page">
-//       <section id="project-scope" className="section project-scope">
-//         <div className="container">
-//           <h2 className="section-title">Domain</h2>
-          
-//           <div className="scope-container">
-//             <div className="scope-tabs">
-//               <button 
-//                 className={`scope-tab ${activeTab === 'literature' ? 'active' : ''}`} 
-//                 onClick={() => handleTabClick('literature')}
-//               >
-//                 Literature Survey
-//               </button>
-//               <button 
-//                 className={`scope-tab ${activeTab === 'gap' ? 'active' : ''}`} 
-//                 onClick={() => handleTabClick('gap')}
-//               >
-//                 Research Gap
-//               </button>
-//               <button 
-//                 className={`scope-tab ${activeTab === 'problem' ? 'active' : ''}`} 
-//                 onClick={() => handleTabClick('problem')}
-//               >
-//                 Research Problem & Solution
-//               </button>
-//               <button 
-//                 className={`scope-tab ${activeTab === 'objectives' ? 'active' : ''}`} 
-//                 onClick={() => handleTabClick('objectives')}
-//               >
-//                 Research Objectives
-//               </button>
-//             </div>
-            
-//             <div className="scope-content">
-//               <div className={`scope-panel ${activeTab === 'literature' ? 'active' : ''}`} id="literature">
-//                 <h3>Literature Survey</h3>
-//                 <p>
-//                   The rapid advancement of Artificial Intelligence (AI) and Internet of Things (IoT) 
-//                   technologies has paved the way for transforming the agricultural sector, driving 
-//                   innovations in crop management, disease detection, and quality control.
-//                 </p>
-//                 <p>
-//                   Smart agriculture aims to leverage digital technologies to create intelligent, 
-//                   interconnected farming systems that enhance productivity and sustainability. AI 
-//                   plays a crucial role in this area by enabling real-time data analysis, automated 
-//                   monitoring, and decision-making support.
-//                 </p>
-//                 <p>
-//                   Recent studies have highlighted various AI applications in agriculture, including 
-//                   the optimization of crop management, early disease and pest detection, and yield 
-//                   prediction. These advancements promise to transform farming practices, making them 
-//                   more efficient and less resource dependent.
-//                 </p>
-//               </div>
-              
-//               <div className={`scope-panel ${activeTab === 'gap' ? 'active' : ''}`} id="gap">
-//                 <h3>Research Gap</h3>
-//                 <p>
-//                   The reviewed literature highlights a significant gap in the application of AI 
-//                   technologies for small-scale rice farming, particularly in the areas of integrated 
-//                   pest management, disease detection, and quality control.
-//                 </p>
-//                 <p>
-//                   While significant progress has been made in the field of smart agriculture, most of 
-//                   these advancements have been tailored to large-scale commercial farming systems or 
-//                   regions with robust infrastructure. As a result, the specific needs of small-scale 
-//                   rice farmers in developing regions remain largely unmet.
-//                 </p>
-//                 <p>
-//                   Many existing AI solutions require expensive equipment, stable internet connectivity, 
-//                   and advanced technical knowledge, which are not readily available to farmers in rural 
-//                   or resource limited areas.
-//                 </p>
-//               </div>
-              
-//               <div className={`scope-panel ${activeTab === 'problem' ? 'active' : ''}`} id="problem">
-//                 <h3>Research Problem & Solution</h3>
-//                 <h4>How to classify pests and diseases in rice crops and provide surveillance to farmers in real time?</h4>
-//                 <p>
-//                   Rice farming is a crucial component of Sri Lanka's agricultural sector and food security. 
-//                   However, farmers face numerous challenges that impact productivity and sustainability. 
-//                   These challenges include pest infestations, plant diseases, quality control issues, and 
-//                   weed seed contamination.
-//                 </p>
-//                 <p>
-//                   Our solution, Farmer Smart, uses mobile and web-based software to manage rice farming 
-//                   challenges. Using Deep Learning techniques like Convolutional Neural Networks (CNN) for 
-//                   feature extraction, we can identify diseases and pests accurately. Farmers will be able 
-//                   to identify issues by capturing photographs of plants with symptoms.
-//                 </p>
-//                 <p>
-//                   The location will be extracted by Geo Tags to gather anonymous data for future predictions. 
-//                   Real-time notifications are sent whenever an infected plant is found, enabling researchers 
-//                   and agricultural officers to take remedial actions quickly.
-//                 </p>
-//               </div>
-              
-//               <div className={`scope-panel ${activeTab === 'objectives' ? 'active' : ''}`} id="objectives">
-//                 <h3>Research Objectives</h3>
-//                 <div className="objective-card">
-//                   <div className="objective-icon">1</div>
-//                   <div className="objective-content">
-//                     <h4>Pest Detection & Classification</h4>
-//                     <p>Develop an AI system to accurately identify and classify common rice pests using image recognition technology.</p>
-//                   </div>
-//                 </div>
-                
-//                 <div className="objective-card">
-//                   <div className="objective-icon">2</div>
-//                   <div className="objective-content">
-//                     <h4>Disease Diagnosis</h4>
-//                     <p>Create a deep learning model to diagnose rice plant diseases at early stages to prevent crop damage.</p>
-//                   </div>
-//                 </div>
-                
-//                 <div className="objective-card">
-//                   <div className="objective-icon">3</div>
-//                   <div className="objective-content">
-//                     <h4>Quality Assessment</h4>
-//                     <p>Design an automated system for evaluating rice quality based on visual characteristics.</p>
-//                   </div>
-//                 </div>
-                
-//                 <div className="objective-card">
-//                   <div className="objective-icon">4</div>
-//                   <div className="objective-content">
-//                     <h4>Weed Seed Detection</h4>
-//                     <p>Implement computer vision algorithms to identify and count weed seeds in rice samples.</p>
-//                   </div>
-//                 </div>
-                
-//                 <div className="objective-card">
-//                   <div className="objective-icon">5</div>
-//                   <div className="objective-content">
-//                     <h4>Real-time Information Sharing</h4>
-//                     <p>Develop a mobile application for farmers to receive real-time alerts and recommendations.</p>
-//                   </div>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </section>
-//     </div>
-//   );
-// };
-
-// export default ProjectScopePage;
-
-
 import React, { useState } from 'react';
 import './ProjectScope.css';
+import systemDiagram from '../assets/images/system-diagram.png';
 
 const DomainPage = () => {
   const [activeTab, setActiveTab] = useState('literature');
@@ -311,105 +150,160 @@ const DomainPage = () => {
 
               <div className={`scope-panel ${activeTab === 'methodology' ? 'active' : ''}`} id="methodology">
                 <h3>Methodology</h3>
-                <p>
-                  The proposed system follows a structured data science approach with data preprocessing, 
-                  model building, validation, and decision integration. The methodology incorporates 
-                  physiological monitoring, behavioral assessment, and treatment prediction components.
-                </p>
-                
-                <div className="methodology-steps">
-                  <div className="step">
-                    <div className="step-number">1</div>
-                    <div className="step-content">
-                      <h4>Data Preprocessing</h4>
-                      <p>Data from IoT wearables, mobile surveys, clinical records, and mutation datasets is cleaned and standardized. Missing values are handled, outliers removed, and relevant features selected for analysis.</p>
+
+                <div className="methodology-layout">
+
+                  {/* LEFT SIDE - TEXT */}
+                  <div className="methodology-text">
+                    <p>
+                      The proposed system follows a structured data science approach with data preprocessing, 
+                      model building, validation, and decision integration. The methodology incorporates 
+                      physiological monitoring, behavioral assessment, and treatment prediction components.
+                    </p>
+
+                    <div className="methodology-steps">
+                      <div className="step">
+                        <div className="step-number">1</div>
+                        <div className="step-content">
+                          <h4>Data Preprocessing</h4>
+                          <p>Data from IoT wearables, mobile surveys, clinical records, and mutation datasets is cleaned and standardized.</p>
+                        </div>
+                      </div>
+
+                      <div className="step">
+                        <div className="step-number">2</div>
+                        <div className="step-content">
+                          <h4>Model Development</h4>
+                          <p>Machine learning and deep learning models are used for prediction and classification tasks.</p>
+                        </div>
+                      </div>
+
+                      <div className="step">
+                        <div className="step-number">3</div>
+                        <div className="step-content">
+                          <h4>Training & Validation</h4>
+                          <p>Models are trained using cross-validation and evaluated using standard performance metrics.</p>
+                        </div>
+                      </div>
+
+                      <div className="step">
+                        <div className="step-number">4</div>
+                        <div className="step-content">
+                          <h4>Integration Pipeline</h4>
+                          <p>All components are combined into a unified decision support system.</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  
-                  <div className="step">
-                    <div className="step-number">2</div>
-                    <div className="step-content">
-                      <h4>Model Development</h4>
-                      <p>Gradient Boosting models are used for behavioral risk and drug resistance prediction. A CNN model is used for tuberculosis detection from chest X-ray images. Hyperparameter tuning improves accuracy</p>
-                    </div>
+
+                  {/* RIGHT SIDE - IMAGE */}
+                  <div className="methodology-image">
+
+                    <h4 className="image-title">
+                      System Architecture of HIV Smart Care
+                    </h4>
+
+                    <img src={systemDiagram} alt="System Architecture Diagram" />
+
+                    <p className="image-description">
+                      <p>The HIV Smart Care system integrates IoT, mobile health, and machine learning into a unified decision support platform. It collects physiological, behavioral, and clinical data and processes them through a backend system to generate real-time insights for patients and healthcare providers.</p>
+                      <p>The system has three main components. The IoT module monitors vital signs and supports early disease screening, including respiratory anomalies and tuberculosis detection. The behavioral module assesses user responses to identify HIV risk levels and provides personalized intervention plans. The clinical module predicts antiretroviral drug resistance and supports treatment optimization using machine learning models.</p>
+                      <p>All processed information is displayed through a secure interface for healthcare providers and patients. Data security is maintained through encryption and role-based access control to ensure patient privacy.</p>
+                    </p>
+
                   </div>
-                  
-                  <div className="step">
-                    <div className="step-number">3</div>
-                    <div className="step-content">
-                      <h4>Model Training & Validation</h4>
-                      <p>Models are trained using stratified five-fold cross-validation. SMOTE is applied for class imbalance. Performance is measured using accuracy, precision, recall, F1-score, and ROC-AUC</p>
-                    </div>
-                  </div>
-                  
-                  <div className="step">
-                    <div className="step-number">4</div>
-                    <div className="step-content">
-                      <h4>Integration Pipeline</h4>
-                      <p>All components are combined into a single pipeline. IoT, behavioral, and clinical data are processed together to generate clinical recommendations for decision support</p>
-                    </div>
-                  </div>
+
                 </div>
               </div>
 
               <div className={`scope-panel ${activeTab === 'technologies' ? 'active' : ''}`} id="technologies">
                 <h3>Technologies Used</h3>
                 <div className="tech-grid">
+
                   <div className="tech-item">
                     <div className="tech-icon">
                       <i className="fab fa-python"></i>
                     </div>
                     <span>Python</span>
                   </div>
-                  
+
                   <div className="tech-item">
                     <div className="tech-icon">
                       <i className="fas fa-brain"></i>
                     </div>
-                    <span>TensorFlow / PyTorch</span>
+                    <span>TensorFlow / Keras (Deep Learning)</span>
                   </div>
-                  
+
                   <div className="tech-item">
                     <div className="tech-icon">
                       <i className="fas fa-chart-line"></i>
                     </div>
-                    <span>XGBoost / Scikit-learn / Random Forest</span>
+                    <span>Scikit-learn / XGBoost / Random Forest</span>
                   </div>
-                  
+
+                  <div className="tech-item">
+                    <div className="tech-icon">
+                      <i className="fas fa-dna"></i>
+                    </div>
+                    <span>Mutation Data Analysis</span>
+                  </div>
+
                   <div className="tech-item">
                     <div className="tech-icon">
                       <i className="fas fa-microchip"></i>
                     </div>
-                    <span>IoT Sensors</span>
+                    <span>IoT Wearable Sensors</span>
                   </div>
-                  
+
+                  <div className="tech-item">
+                    <div className="tech-icon">
+                      <i className="fas fa-microphone"></i>
+                    </div>
+                    <span>Cough Detection Sensors</span>
+                  </div>
+
+                  <div className="tech-item">
+                    <div className="tech-icon">
+                      <i className="fas fa-x-ray"></i>
+                    </div>
+                    <span>Chest X-ray Imaging (TB Detection)</span>
+                  </div>
+
                   <div className="tech-item">
                     <div className="tech-icon">
                       <i className="fas fa-cloud"></i>
                     </div>
-                    <span>Cloud Platform</span>
+                    <span>Cloud Computing (Data Storage & Processing)</span>
                   </div>
-                  
+
                   <div className="tech-item">
                     <div className="tech-icon">
-                      <i className="fab fa-react"></i>
+                      <i className="fas fa-mobile-alt"></i>
                     </div>
-                    <span>React Native</span>
+                    <span>Flutter Mobile App</span>
                   </div>
-                  
+
                   <div className="tech-item">
                     <div className="tech-icon">
                       <i className="fas fa-database"></i>
                     </div>
-                    <span>Firebase</span>
+                    <span>Firebase / Cloud Database</span>
                   </div>
-                  
+
                   <div className="tech-item">
                     <div className="tech-icon">
                       <i className="fas fa-chart-bar"></i>
                     </div>
-                    <span>Analytics Dashboard</span>
+                    <span>Data Analytics Dashboard</span>
                   </div>
+
+                  <div className="tech-item">
+                    <div className="tech-icon">
+                      <i className="fas fa-lock"></i>
+                    </div>
+                    <span>Security (Encryption & Authentication)</span>
+                  </div>
+
                 </div>
               </div>
             </div>
