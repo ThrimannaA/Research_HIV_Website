@@ -220,46 +220,32 @@ const DomainPage = () => {
               <div className={`scope-panel ${activeTab === 'literature' ? 'active' : ''}`} id="literature">
                 <h3>Literature Survey</h3>
                 <p>
-                  The management of Human Immunodeficiency Virus (HIV) remains a global healthcare concern, 
-                  especially in areas with scarce resources, where constant monitoring, behavioral risk 
-                  evaluation, and improvement in treatment protocols are often restricted.
+                  The management of Human Immunodeficiency Virus (HIV) remains a major global healthcare challenge, particularly in resource-limited settings where continuous monitoring, behavioral assessment, and timely treatment adjustments are difficult to maintain. Traditional HIV care relies mainly on laboratory-based indicators such as viral load and CD4 cell count, which provide important information about disease progression and immune system status. However, these tests are typically performed only during scheduled clinical visits, which limits real-time access to patient health data and delays early detection of potential complications.
                 </p>
                 <p>
-                  Traditional HIV monitoring uses lab-based indicators such as viral load and CD4 cell count. 
-                  These tests offer important clinical data relating to disease progression and immune system 
-                  function. However, these tests can only be carried out during scheduled medical consultations, 
-                  limiting timely data access.
+                  Recent research has explored the use of digital health technologies to overcome these limitations. Internet of Things (IoT) systems enable continuous physiological monitoring through wearable sensors, allowing healthcare providers to track patient health conditions outside clinical environments. In addition, mobile health applications support behavioral data collection and patient engagement, helping to identify risk-related behaviors and improve adherence to treatment. These technologies have shown potential in improving patient monitoring and supporting more proactive healthcare delivery.
                 </p>
                 <p>
-                  Studies have investigated the potential of digital technologies in promoting HIV prevention, 
-                  monitoring, and treatment. Machine learning techniques have been applied to HIV-related 
-                  datasets to predict disease progression. Mobile health technology has shown promising 
-                  potential in patient engagement and treatment compliance.
+                  Machine learning techniques have also been widely applied in HIV-related research. Predictive models are used to analyze clinical, behavioral, and physiological data to estimate disease progression and identify high-risk patients. Furthermore, research in computational biology has developed extensive databases of HIV drug resistance mutations, which support the development of machine learning models to predict the effectiveness of antiretroviral drugs. These approaches help clinicians make more informed treatment decisions based on data-driven insights.
                 </p>
                 <p>
-                  Recent research has developed large databases of HIV drug resistance mutations, which can 
-                  be used for predictive modelling of drug response by machine learning algorithms. Despite 
-                  these advances, current solutions address only isolated aspects of HIV care.
+                  Despite these advancements, most existing solutions focus on isolated aspects of HIV care such as monitoring, behavioral analysis, or treatment prediction. There is still a lack of integrated systems that combine these components into a unified decision support framework. This gap highlights the need for a comprehensive approach that integrates IoT-based monitoring, behavioral risk assessment, and predictive treatment optimization to support continuous and personalized HIV care.
                 </p>
               </div>
               
               <div className={`scope-panel ${activeTab === 'gap' ? 'active' : ''}`} id="gap">
                 <h3>Research Gap</h3>
                 <p>
-                  Previous studies have shown the benefits of individual digital interventions, yet the field 
-                  of HIV care technologies remains fragmented. No existing solution integrates continuous 
-                  physiological monitoring, behavioral risk assessment, personalized interventions, and 
-                  drug resistance prediction within a single framework.
+                  Although significant progress has been made in digital health technologies for HIV management, existing solutions remain fragmented. Most current systems focus on isolated components such as physiological monitoring, behavioral risk analysis, or treatment outcome prediction, rather than addressing HIV care in a holistic manner
                 </p>
                 <p>
-                  While significant progress has been made in digital health for HIV management, most systems 
-                  focus on single aspects - some designed for physiological monitoring, some for behavioral 
-                  interventions, and some for predicting treatment outcomes.
+                  Previous studies have demonstrated the effectiveness of individual approaches, including IoT-based patient monitoring systems, mobile health applications for behavioral interventions, and machine learning models for disease progression and drug resistance prediction. However, these systems operate independently and do not share an integrated decision-making framework.
                 </p>
                 <p>
-                  There is a critical need for a system that can integrate all these features into a unified 
-                  decision support system. This research addresses that gap by presenting the design and 
-                  prototype evaluation of a comprehensive, multi-component decision support system for HIV care.
+                  There is a clear lack of a unified system that combines continuous physiological monitoring, behavioral risk assessment, personalized intervention strategies, and predictive drug resistance analysis within a single platform. This separation limits the ability to provide comprehensive, real-time, and personalized HIV care.
+                </p>
+                <p>
+                  Therefore, this research addresses this gap by proposing and implementing an integrated IoT and AI-based decision support system that combines all three aspects into a unified framework for improved HIV management and clinical decision support.
                 </p>
               </div>
               
@@ -267,21 +253,16 @@ const DomainPage = () => {
                 <h3>Research Problem & Solution</h3>
                 <h4>How to provide integrated IoT and AI-based decision support for HIV care?</h4>
                 <p>
-                  HIV remains a pandemic, infecting millions worldwide, and is still regarded as one of the 
-                  most serious health issues globally. Health organizations worldwide stress the need for 
-                  early diagnosis, regular monitoring, and proper treatment to reduce mortality rates and 
-                  improve quality of life.
+                  Human Immunodeficiency Virus (HIV) continues to be a major global health challenge, affecting millions of individuals worldwide. Despite significant advances in treatment, effective management of HIV still depends on continuous monitoring, behavioral risk assessment, and timely treatment optimization. However, in most healthcare systems, these aspects are handled separately and are largely dependent on periodic clinical visits. This creates delays in identifying health deterioration, assessing patient risk behavior, and adjusting treatment strategies.
                 </p>
                 <p>
-                  Our solution proposes a framework for physiological monitoring, behavioral risk identification, 
-                  and treatment optimization through IoT technology and AI. The framework has the potential 
-                  to assist both patients and healthcare providers through real-time health insights.
+                  Existing HIV management approaches are fragmented. Physiological monitoring is typically limited to hospital-based laboratory tests such as viral load and CD4 count, while behavioral risk evaluation is often conducted through manual assessments or separate mobile applications. Similarly, treatment prediction and drug resistance analysis are performed independently using clinical or genetic data without integration with real-time patient monitoring systems. This lack of integration reduces the ability of healthcare providers to make timely and data-driven decisions.
                 </p>
                 <p>
-                  The system includes IoT-based physiological monitoring using wearable sensors, behavioral 
-                  risk assessment through a mobile application, and machine learning-based treatment prediction 
-                  using clinical and mutation data. This integrated approach provides continuous monitoring, 
-                  personalized interventions, and predictive clinical decision support.
+                  To address this gap, this research proposes an integrated IoT and AI-based decision support system for HIV care. The proposed solution combines three core components: IoT-based physiological monitoring using wearable sensors, AI-driven behavioral risk assessment through a mobile application, and machine learning-based drug resistance prediction using clinical and mutation data. These components work together within a unified framework to provide continuous monitoring, personalized intervention strategies, and predictive treatment recommendations.
+                </p>
+                <p>
+                  The proposed system aims to improve HIV management by enabling real-time health insights for both patients and healthcare providers. By integrating multiple data sources into a single decision support platform, the system supports proactive healthcare delivery, enhances treatment accuracy, and improves overall patient outcomes.
                 </p>
               </div>
               
@@ -291,7 +272,7 @@ const DomainPage = () => {
                   <div className="objective-icon">1</div>
                   <div className="objective-content">
                     <h4>IoT-Based Physiological Monitoring</h4>
-                    <p>Develop continuous patient monitoring using wearable sensors to track heart rate, blood oxygen saturation, body temperature, and physical activity levels in real-time.</p>
+                    <p>To develop a continuous patient monitoring system using IoT-based wearable sensors to capture physiological parameters such as heart rate, blood oxygen saturation, body temperature, and physical activity levels in real time</p>
                   </div>
                 </div>
                 
@@ -299,7 +280,7 @@ const DomainPage = () => {
                   <div className="objective-icon">2</div>
                   <div className="objective-content">
                     <h4>Tuberculosis Screening System</h4>
-                    <p>Create a microphone-based cough pattern monitoring system with deep learning analysis of chest X-rays for early TB detection in HIV patients.</p>
+                    <p>To design an automated tuberculosis screening module using cough pattern analysis and deep learning-based chest X-ray image classification for early detection of TB in HIV patients</p>
                   </div>
                 </div>
                 
@@ -307,7 +288,7 @@ const DomainPage = () => {
                   <div className="objective-icon">3</div>
                   <div className="objective-content">
                     <h4>Behavioral Risk Identification</h4>
-                    <p>Design a mobile application with rule-based clinical scoring and machine learning models to assess behavioral risk factors and generate personalized intervention plans.</p>
+                    <p>To develop a mobile-based behavioral risk assessment system using rule-based clinical scoring and machine learning techniques to identify high-risk behaviors and generate personalized intervention strategies</p>
                   </div>
                 </div>
                 
@@ -315,7 +296,7 @@ const DomainPage = () => {
                   <div className="objective-icon">4</div>
                   <div className="objective-content">
                     <h4>Drug Resistance Prediction</h4>
-                    <p>Implement machine learning algorithms to predict antiretroviral drug resistance using clinical data, treatment history, and viral mutation counts.</p>
+                    <p>To implement a machine learning-based predictive model for antiretroviral drug resistance using clinical data, treatment history, and viral mutation profiles</p>
                   </div>
                 </div>
                 
@@ -323,7 +304,7 @@ const DomainPage = () => {
                   <div className="objective-icon">5</div>
                   <div className="objective-content">
                     <h4>Integrated Decision Support</h4>
-                    <p>Develop a unified mobile-based platform that integrates all components for continuous monitoring, risk assessment, and treatment optimization.</p>
+                    <p>To develop a unified decision support platform that integrates IoT monitoring, behavioral analysis, and drug resistance prediction to support continuous monitoring and treatment optimization for HIV patients</p>
                   </div>
                 </div>
               </div>
@@ -341,7 +322,7 @@ const DomainPage = () => {
                     <div className="step-number">1</div>
                     <div className="step-content">
                       <h4>Data Preprocessing</h4>
-                      <p>Physiological signals from IoT wearables, behavioral responses, clinical data, and mutation data are cleaned, normalized, and prepared for analysis. Missing values are handled, outliers removed, and features selected using correlation analysis.</p>
+                      <p>Data from IoT wearables, mobile surveys, clinical records, and mutation datasets is cleaned and standardized. Missing values are handled, outliers removed, and relevant features selected for analysis.</p>
                     </div>
                   </div>
                   
@@ -349,7 +330,7 @@ const DomainPage = () => {
                     <div className="step-number">2</div>
                     <div className="step-content">
                       <h4>Model Development</h4>
-                      <p>Gradient boosting models for behavioral risk prediction and drug resistance classification. Deep learning CNN for tuberculosis detection from chest X-rays. Hyperparameter tuning using grid search and cross-validation.</p>
+                      <p>Gradient Boosting models are used for behavioral risk and drug resistance prediction. A CNN model is used for tuberculosis detection from chest X-ray images. Hyperparameter tuning improves accuracy</p>
                     </div>
                   </div>
                   
@@ -357,7 +338,7 @@ const DomainPage = () => {
                     <div className="step-number">3</div>
                     <div className="step-content">
                       <h4>Model Training & Validation</h4>
-                      <p>Stratified five-fold cross-validation with SMOTE sampling for class imbalance. Performance evaluation using accuracy, precision, recall, F1-score, and ROC AUC metrics.</p>
+                      <p>Models are trained using stratified five-fold cross-validation. SMOTE is applied for class imbalance. Performance is measured using accuracy, precision, recall, F1-score, and ROC-AUC</p>
                     </div>
                   </div>
                   
@@ -365,7 +346,7 @@ const DomainPage = () => {
                     <div className="step-number">4</div>
                     <div className="step-content">
                       <h4>Integration Pipeline</h4>
-                      <p>Unified pipeline processing wearable data, behavioral data analysis, and treatment prediction on clinician request. Decision support logic converts model outputs into clinical recommendations.</p>
+                      <p>All components are combined into a single pipeline. IoT, behavioral, and clinical data are processed together to generate clinical recommendations for decision support</p>
                     </div>
                   </div>
                 </div>
@@ -392,7 +373,7 @@ const DomainPage = () => {
                     <div className="tech-icon">
                       <i className="fas fa-chart-line"></i>
                     </div>
-                    <span>XGBoost / Scikit-learn</span>
+                    <span>XGBoost / Scikit-learn / Random Forest</span>
                   </div>
                   
                   <div className="tech-item">
@@ -420,7 +401,7 @@ const DomainPage = () => {
                     <div className="tech-icon">
                       <i className="fas fa-database"></i>
                     </div>
-                    <span>MongoDB / Firebase</span>
+                    <span>Firebase</span>
                   </div>
                   
                   <div className="tech-item">

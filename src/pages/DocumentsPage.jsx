@@ -5,58 +5,65 @@ const DocumentsPage = () => {
   // Completed documents with their Google Drive links
   const completedDocs = [
     {
-      title: "Project Charter",
-      description: "Initial project charter document outlining scope, stakeholders, and high-level requirements for HIV Smart Care system",
-      link: "https://mysliit.sharepoint.com/sites/CDAPSubmissionCloud/2526JCloud/Forms/AllItems.aspx?id=%2Fsites%2FCDAPSubmissionCloud%2F2526JCloud%2F25%2D26J%2D147%2DStudents&viewid=b6c5e95e%2Dd054%2D4e72%2Dbb46%2D33a9940141f2",
+      title: "Charter Document",
+      description: "Initial approved topic assessment form documenting research problem, scope, stakeholder context, objectives, novelty, and high-level solution requirements for the End-to-End Predictive and Prescriptive HIV System",
+      link: "https://drive.google.com/drive/u/2/folders/1AfvZ51NqCLuN5_srvktAYCk76Pf84Pdi",
       type: "PDF",
       status: "completed"
     },
     {
       title: "Proposal Document",
-      description: "Detailed project proposal including problem statement, research objectives, methodology, and timeline for IoT/AI-based HIV decision support",
-      link: "https://mysliit.sharepoint.com/sites/CDAPSubmissionCloud/2526JCloud/Forms/AllItems.aspx?id=%2Fsites%2FCDAPSubmissionCloud%2F2526JCloud%2F25%2D26J%2D147%2DStudents%2F1%2E%20Project%20Proposal&viewid=b6c5e95e%2Dd054%2D4e72%2Dbb46%2D33a9940141f2",
+      description: "Detailed project proposal including problem statement, research objectives, methodology, and timeline for an end-to-end predictive and prescriptive HIV system focusing on behavioral risk identification and personalized intervention sequencing",
+      link: "https://drive.google.com/drive/u/2/folders/1wy2Riu4LC6mMmtkS73NecP1Ay0DuHWr3",
       type: "PDF",
       status: "completed"
     },
     {
-      title: "Checklist Documents",
-      description: "Project checklist and compliance verification documents for all assessment milestones",
-      link: "https://mysliit.sharepoint.com/sites/CDAPSubmissionCloud/2526JCloud/Forms/AllItems.aspx?id=%2Fsites%2FCDAPSubmissionCloud%2F2526JCloud%2F25%2D26J%2D147%2DStudents%2F6%2E%20CheckList%20Documents&viewid=b6c5e95e%2Dd054%2D4e72%2Dbb46%2D33a9940141f2",
-      type: "ZIP",
+      title: "Completed Checklist Documents",
+      description: "Project checklist and compliance verification documents including literature review tracking sheet and methodology compliance verification for research assessment milestones",
+      link: "https://drive.google.com/drive/u/2/folders/1GqvJN4sCmQpCQ_8O93dFYtambZ6rZA9F",
+      type: "PDF, Excel",
+      status: "completed"
+    },
+    {
+      title: "Draft Thesis Documents",
+      description: "Draft dissertation document presenting complete research on end-to-end predictive and prescriptive HIV system, including introduction, methodology, results, discussion, and conclusions",
+      link: "https://drive.google.com/drive/u/2/folders/1Wsl0vMXTZNGmzM_Lrob0nCtlAgBvUmh4",
+      type: "PDF",
       status: "completed"
     }
   ];
 
   // Pending documents
   const pendingDocs = [
-    {
-      title: "Final Document - Part 1",
-      description: "Final thesis document - Introduction, Literature Review, and Research Gap Analysis",
-      status: "Pending",
-      expectedDate: "May 2025",
+   {
+      title: "Pending Checklist Documents",
+      description: "Project ethical compliance checklist (data privacy, security, bias, transparency, stakeholder impact) and technical implementation checklist (data pipeline, model development, integration, deployment) for research assessment milestones",
+      status: "pending",
+      expectedDate: "30 April 2026",
       link: null
     },
     {
-      title: "Final Document - Part 2",
-      description: "Final thesis document - System Architecture and Methodology",
+      title: "Final Thesis Document",
+      description: "Final group thesis and individual summary reports documenting the complete HIV risk assessment and personalized intervention research",
       status: "Pending",
-      expectedDate: "May 2025",
+      expectedDate: "13 May 2026",
       link: null
     },
     {
-      title: "Final Document - Part 3",
-      description: "Final thesis document - Implementation and Results Analysis",
+      title: "Logbook Submission",
+      description: "Project logbook documenting weekly progress, supervisor meetings, task completion, and research activities from proposal to final submission",
       status: "Pending",
-      expectedDate: "June 2025",
+      expectedDate: "6 May 2026",
       link: null
     },
     {
-      title: "Final Document - Part 4",
-      description: "Final thesis document - Discussion, Conclusion, and References",
+      title: "Research Paper Submission",
+      description: "Final research paper summarizing the complete end-to-end predictive and prescriptive HIV system including problem statement, methodology, results, clinical validation, and conclusions for academic publication",
       status: "Pending",
-      expectedDate: "June 2025",
+      expectedDate: "8 May 2026",
       link: null
-    }
+    },
   ];
 
   return (

@@ -69,18 +69,18 @@ const Footer = () => {
               </div>
               
               <div className="social-media">
-                <a href="#" className="social-link" title="Facebook">
+                <div className="social-link" title="Facebook">
                   <i className="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" className="social-link" title="Twitter">
+                </div>
+                <div className="social-link" title="Twitter">
                   <i className="fab fa-twitter"></i>
-                </a>
-                <a href="#" className="social-link" title="LinkedIn">
+                </div>
+                <div className="social-link" title="LinkedIn">
                   <i className="fab fa-linkedin-in"></i>
-                </a>
-                <a href="#" className="social-link" title="GitHub">
+                </div>
+                <div className="social-link" title="GitHub">
                   <i className="fab fa-github"></i>
-                </a>
+                </div>
               </div>
             </div>
             
