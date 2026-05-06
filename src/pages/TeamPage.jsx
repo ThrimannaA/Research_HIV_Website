@@ -2,7 +2,7 @@ import React from 'react';
 import './TeamPage.css';
 import './Team.css';
 import anujiImage from '../assets/images/anuji.png';
-import deesaraImage from '../assets/images/deesara.png';
+import deesaraImage from '../assets/images/Deesara.png';
 import viharaImage from '../assets/images/vihara.png';
 import msThamaliImage from '../assets/images/MsThamali.png';
 import { Link } from 'react-router-dom';
@@ -72,15 +72,15 @@ const TeamPage = () => {
       <section id="team" className="section team">
         <div className="container">
           <h2 className="section-title">About Us</h2>
-          
+
           <div className="team-grid">
             {teamMembers.map((member, index) => (
               <div className="team-card" key={index}>
                 <div className="member-image">
                   {member.hasRealImage ? (
-                    <img 
-                      src={member.image} 
-                      alt={member.name} 
+                    <img
+                      src={member.image}
+                      alt={member.name}
                       className={`real-image ${member.imageClass}`}
                     />
                   ) : (
@@ -120,8 +120,8 @@ const TeamPage = () => {
               </div>
             ))}
           </div>
-          
-   
+
+
         </div>
       </section>
     </div>
