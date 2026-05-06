@@ -8,9 +8,10 @@ const Footer = () => {
     email: '',
     message: ''
   });
-  
-  const [formSubmitted, setFormSubmitted] = useState(false);
-  
+
+  const [formStatus, setFormStatus] = useState('idle'); // idle | loading | success | error
+  const [errorMessage, setErrorMessage] = useState('');
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevState => ({
@@ -18,21 +19,33 @@ const Footer = () => {
       [name]: value
     }));
   };
-  
-  const handleSubmit = (e) => {
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    setFormSubmitted(true);
-    
-    setFormData({
-      name: '',
-      email: '',
-      message: ''
-    });
-    
-    setTimeout(() => {
-      setFormSubmitted(false);
-    }, 5000);
+    setFormStatus('loading');
+    setErrorMessage('');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        setFormStatus('success');
+        setFormData({ name: '', email: '', message: '' });
+        setTimeout(() => setFormStatus('idle'), 6000);
+      } else {
+        setErrorMessage(data.error || 'Something went wrong. Please try again.');
+        setFormStatus('error');
+      }
+    } catch (err) {
+      setErrorMessage('Network error. Please check your connection and try again.');
+      setFormStatus('error');
+    }
   };
 
   return (
@@ -86,50 +99,66 @@ const Footer = () => {
             
             <div className="contact-form">
               <h3>Get in Touch</h3>
-              {formSubmitted ? (
+              {formStatus === 'success' ? (
                 <div className="form-success">
                   <i className="fas fa-check-circle"></i>
-                  <p>Thank you for your message! We will get back to you soon.</p>
+                  <p>Thank you for your message! We will get back to you soon. A confirmation has been sent to your email.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit}>
                   <div className="form-group">
                     <label htmlFor="name">Name</label>
-                    <input 
-                      type="text" 
-                      id="name" 
-                      name="name" 
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      required 
+                      disabled={formStatus === 'loading'}
+                      required
                     />
                   </div>
-                  
+
                   <div className="form-group">
                     <label htmlFor="email">Email</label>
-                    <input 
-                      type="email" 
-                      id="email" 
-                      name="email" 
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      required 
+                      disabled={formStatus === 'loading'}
+                      required
                     />
                   </div>
-                  
+
                   <div className="form-group">
                     <label htmlFor="message">Message</label>
-                    <textarea 
-                      id="message" 
-                      name="message" 
+                    <textarea
+                      id="message"
+                      name="message"
                       rows="4"
                       value={formData.message}
                       onChange={handleChange}
+                      disabled={formStatus === 'loading'}
                       required
                     ></textarea>
                   </div>
-                  
-                  <button type="submit" className="btn">Send Message</button>
+
+                  {formStatus === 'error' && (
+                    <div className="form-error">
+                      <i className="fas fa-exclamation-circle"></i>
+                      <p>{errorMessage}</p>
+                    </div>
+                  )}
+
+                  <button type="submit" className="btn" disabled={formStatus === 'loading'}>
+                    {formStatus === 'loading' ? (
+                      <><i className="fas fa-spinner fa-spin"></i> Sending...</>
+                    ) : (
+                      'Send Message'
+                    )}
+                  </button>
                 </form>
               )}
             </div>

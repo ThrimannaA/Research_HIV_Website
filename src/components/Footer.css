@@ -141,6 +141,56 @@
   margin-bottom: 1rem;
 }
 
+.form-error {
+  background-color: rgba(229, 57, 53, 0.15);
+  border: 1px solid #e53935;
+  border-radius: 4px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.form-error i {
+  color: #e53935;
+  font-size: 1.1rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.form-error p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ffcdd2;
+}
+
+.form-group input:disabled,
+.form-group textarea:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.contact-form .btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.contact-form .btn:disabled:hover {
+  background-color: var(--accent-color);
+  transform: none;
+}
+
+@keyframes fa-spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.fa-spin {
+  animation: fa-spin 1s linear infinite;
+}
+
 .footer-bottom {
   background-color: rgba(0, 0, 0, 0.2);
   padding: 1.5rem 0;

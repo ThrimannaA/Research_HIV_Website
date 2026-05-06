@@ -4,7 +4,8 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/Research_HIV_Website/",
+  // Use env var for base: '/' for Render/production, '/Research_HIV_Website/' for GitHub Pages
+  base: process.env.VITE_BASE_PATH || "/",
   server: {
     proxy: {
       '/api': {

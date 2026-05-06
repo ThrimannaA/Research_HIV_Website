@@ -99,8 +99,8 @@ app.post('/api/contact', async (req, res) => {
 // Serve static files from the dist directory (production)
 app.use(express.static(join(__dirname, 'dist')));
 
-// SPA fallback - serve index.html for all non-API routes
-app.get('*', (req, res) => {
+// SPA fallback - serve index.html for all non-API routes (Express 5 wildcard syntax)
+app.get('/{*splat}', (req, res) => {
   try {
     const content = readFileSync(join(__dirname, 'dist', 'index.html'));
     res.set('Content-Type', 'text/html');
