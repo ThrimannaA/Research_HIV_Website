@@ -122,7 +122,7 @@ const DocumentsPage = () => {
             {/* Note about documents */}
             <div className="documents-note">
               <i className="fas fa-info-circle"></i>
-              <p>All completed documents are available for download. Pending documents will be uploaded upon completion.</p>
+              <p>All completed documents are available for View. Pending documents will be uploaded upon completion.</p>
             </div>
           </div>
         </div>

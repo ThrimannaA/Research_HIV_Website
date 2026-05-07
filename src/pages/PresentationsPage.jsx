@@ -188,31 +188,34 @@ const PresentationsPage = () => {
       title: "Proposal Presentation",
       date: "19 November 2025",
       status: "Available",
-      description: "Initial project proposal presentation covering research problem, objectives, methodology, and expected outcomes for an end-to-end predictive and prescriptive HIV system that integrates risk assessment, behavioral detection, and personalized intervention sequencing",
+      description: "Initial project proposal presentation...",
       slidesCount: 30,
-      link: "/presentations/proposal-presentation.pptx"  
+      link: "https://drive.google.com/drive/u/2/folders/1wy2Riu4LC6mMmtkS73NecP1Ay0DuHWr3"
     },
+
     progress1: {
       title: "Progress Presentation 1",
       date: "9 January 2026",
       status: "Available",
-      description: "First progress presentation demonstrating three core subsystems: IoT-based physiological monitoring with CD4 estimation (prototype phase), HIV behavioral risk identification with personalized intervention sequencing, and machine learning-based drug resistance prediction for treatment optimization",
-      slidesCount: 12,
-      link: "/presentations/progress1-presentation.pptx"  
+      description: "First progress presentation...",
+      slidesCount: 11,
+      link: "https://docs.google.com/presentation/d/1jCaQ06V_i4aH6Im98PNueTU201f0iTTK/edit?usp=sharing&ouid=117693331442602281021&rtpof=true&sd=true"
     },
+
     progress2: {
       title: "Progress Presentation 2",
       date: "12 March 2026",
       status: "Available",
-      description: "Second Progress presentation showcasing model development, prototype implementation of IoT monitoring, behavioral risk assessment system, ML-based treatment prediction, and initial clinical validation results",
+      description: "Second progress presentation...",
       slidesCount: 8,
-      link: "/presentations/progress2-presentation.pptx"
+      link: "https://docs.google.com/presentation/d/1o0Jv_YUNwl3Std9AINYWDAyZAXOBzMmZ/edit?usp=sharing&ouid=117693331442602281021&rtpof=true&sd=true"
     },
+
     final: {
       title: "Final Presentation",
       date: "6 May 2026",
       status: "Upcoming",
-      description: "Final assessment presentation summarizing the complete end-to-end system implementation, including IoT monitoring, behavioral risk sequencing, drug resistance prediction, clinical validation results, and future improvements",
+      description: "Final assessment presentation...",
       slidesCount: "6",
       link: null
     }
@@ -271,13 +274,14 @@ const PresentationsPage = () => {
                 </div>
 
                 {presentations[selectedPresentation].link ? (
-                  <a 
-                    href={presentations[selectedPresentation].link} 
-                    download
+                  <a
+                    href={presentations[selectedPresentation].link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="presentation-link"
                   >
-                    <i className="fas fa-download"></i>
-                    Download Presentation Slides
+                    <i className="fas fa-eye"></i>
+                    View Presentation Slides
                   </a>
                 ) : (
                   <div className="presentation-upcoming">
